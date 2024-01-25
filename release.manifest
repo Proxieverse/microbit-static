@@ -1,0 +1,86 @@
+CACHE MANIFEST
+
+CACHE:
+/microbit-static/semantic.js
+/microbit-static/main.js
+/microbit-static/pxtapp.js
+/microbit-static/typescript.js
+/microbit-static/marked/marked.min.js
+/microbit-static/highlight.js/highlight.pack.js
+/microbit-static/jquery.js
+/microbit-static/pxtlib.js
+/microbit-static/pxtcompiler.js
+/microbit-static/pxtpy.js
+/microbit-static/pxtblockly.js
+/microbit-static/pxteditor.js
+/microbit-static/pxtsim.js
+/microbit-static/pxtembed.js
+/microbit-static/pxtworker.js
+/microbit-static/pxtweb.js
+/microbit-static/blockly.css
+/microbit-static/semantic.css
+/microbit-static/rtlsemantic.css
+
+
+/microbit-static/editor.js
+/microbit-static/fieldeditors.js
+
+# blockly
+/microbit-static/blockly/media/sprites.png
+/microbit-static/blockly/media/click.mp3
+/microbit-static/blockly/media/disconnect.wav
+/microbit-static/blockly/media/delete.mp3
+
+# monaco; keep in sync with webapp/public/index.html
+/microbit-static/vs/loader.js
+/microbit-static/vs/base/worker/workerMain.js
+/microbit-static/vs/basic-languages/bat/bat.js
+/microbit-static/vs/basic-languages/cpp/cpp.js
+/microbit-static/vs/basic-languages/python/python.js
+/microbit-static/vs/basic-languages/typescript/typescript.js
+/microbit-static/vs/basic-languages/markdown/markdown.js
+/microbit-static/vs/editor/editor.main.css
+/microbit-static/vs/editor/editor.main.js
+/microbit-static/vs/editor/editor.main.nls.js
+/microbit-static/vs/language/json/jsonMode.js
+/microbit-static/vs/language/json/jsonWorker.js
+/microbit-static/vs/language/typescript/tsMode.js
+/microbit-static/vs/language/typescript/tsWorker.js
+
+# charts
+/microbit-static/smoothie/smoothie_compressed.js
+/microbit-static/images/Bars_black.gif
+
+# gifjs
+/microbit-static/gifjs/gif.js
+
+# ai
+/microbit-static/ai.0.js
+
+/microbit-static/worker.js
+/microbit-static/monacoworker.js
+
+# ver Thu Jan 25 2024 15:07:46 GMT+0530 (India Standard Time)
+
+# target
+/microbit-static/docs/static/logo.portrait.white.svg
+/microbit-static/docs/static/logo.square.white.svg
+/microbit-static/docs/static/logo.square.white.svg
+/microbit-static/docs/static/logo.portrait.black.svg
+/microbit-static/docs/static/icons/apple-touch-icon.png
+/microbit-static/docs/static/plogo.png
+/microbit-static/docs/static/herogallery/hero-banner.png
+/microbit-static/docs/static/download/transfer.png
+/microbit-static/docs/static/download/connect-microbit.gif
+/microbit-static/docs/static/download/selecting-microbit.gif
+/microbit-static/docs/static/download/successfully-paired.png
+/microbit-static/docs/static/download/incompatible.png
+/microbit-static/docs/static/download/device-forgotten.gif
+/microbit-static/docs/static/download/browser-unpair-image.gif
+/microbit-static/docs/static/winapp.PNG
+/microbit-static/docs/static/profile/microbit-cloud.png
+
+/microbit-static/target.js
+
+NETWORK:
+*

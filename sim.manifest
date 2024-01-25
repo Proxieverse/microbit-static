@@ -1,0 +1,19 @@
+CACHE MANIFEST
+
+CACHE:
+/microbit-static/pxtsim.js
+/microbit-static/sim.js
+
+/microbit-static/sounds/giggle.wav
+/microbit-static/sounds/happy.wav
+/microbit-static/sounds/hello.wav
+/microbit-static/sounds/mysterious.wav
+/microbit-static/sounds/sad.wav
+/microbit-static/sounds/slide.wav
+/microbit-static/sounds/soaring.wav
+/microbit-static/sounds/spring.wav
+/microbit-static/sounds/twinkle.wav
+/microbit-static/sounds/yawn.wav
+
+NETWORK:
+*

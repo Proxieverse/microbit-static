@@ -1,0 +1,16 @@
+# Projects
+
+* [Tutorials](/tutorials)
+  * [Flashing Heart](/projects/flashing-heart)
+  * [Name Tag](/projects/name-tag)
+  * [Smiley Buttons](/projects/smiley-buttons)
+  * [Dice](/projects/dice)
+  * [Love Meter](/projects/love-meter)
+  * [Micro Chat](/projects/micro-chat)
+* [Tutorials for the new micro:bit (V2)](/tutorials-v2)
+  * [Pet Hamster](/projects/v2-pet-hamster)
+  * [Countdown](/projects/v2-countdown)
+  * [Morse Chat](/projects/v2-morse-chat)
+  * [Clap Lights](/projects/v2-clap-lights)
+  * [Blow Away](/projects/v2-blow-away)
+  * [Cat Napping](/projects/v2-cat-napping)

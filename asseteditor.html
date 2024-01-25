@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"  manifest="/microbit-static/release.manifest" data-framework="typescript">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" data-rtl="/microbit-static/rtlsemantic.css" href="/microbit-static/semantic.css" type="text/css">
+    <title>MakeCode Asset Editor</title>
+    <style>
+        #asset-editor-field-div {
+            height: 100%;
+        }
+        .image-editor-wrapper {
+            border-radius: 0;
+        }
+        .image-editor-confirm {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // This line gets patched up by the cloud
+        var pxtConfig = {
+    "relprefix": "/microbit-static/",
+    "verprefix": "",
+    "workerjs": "/microbit-static/worker.js",
+    "monacoworkerjs": "/microbit-static/monacoworker.js",
+    "gifworkerjs": "/microbit-static/gifjs/gif.worker.js",
+    "serviceworkerjs": "/microbit-static/serviceworker.js",
+    "typeScriptWorkerJs": "/microbit-static/tsworker.js",
+    "pxtVersion": "9.3.7",
+    "pxtRelId": "localDirRelId",
+    "pxtCdnUrl": "/microbit-static/",
+    "commitCdnUrl": "/microbit-static/",
+    "blobCdnUrl": "/microbit-static/",
+    "cdnUrl": "/microbit-static/",
+    "targetVersion": "0.0.0",
+    "targetRelId": "",
+    "targetUrl": "",
+    "targetId": "microbit",
+    "simUrl": "/microbit-static/simulator.html",
+    "simserviceworkerUrl": "/microbit-static/simulatorserviceworker.js",
+    "simworkerconfigUrl": "/microbit-static/workerConfig.js",
+    "partsUrl": "/microbit-static/siminstructions.html",
+    "runUrl": "/microbit-static/run.html",
+    "docsUrl": "/microbit-static/docs.html",
+    "multiUrl": "/microbit-static/multi.html",
+    "asseteditorUrl": "/microbit-static/asseteditor.html",
+    "skillmapUrl": "/microbit-static/skillmap.html",
+    "authcodeUrl": "/microbit-static/authcode.html",
+    "multiplayerUrl": "/microbit-static/multiplayer.html",
+    "kioskUrl": "/microbit-static/kiosk.html",
+    "isStatic": true
+};
+    </script>
+    <script type="text/javascript" src="/microbit-static/target.js"></script>
+    <!-- <script type="text/javascript" src="https://pxt.azureedge.net/blob/ec765d3ba50a09c8c8819ec80390b6ffa72e945a/target.js"></script> -->
+    <script type="text/javascript" src="/microbit-static/pxtapp.js"></script>
+    <script>
+        pxt.setAppTarget(pxtTargetBundle);
+        // This can be overridden via the messages sent to the page
+        pxt.appTarget.runtime.palette = ["#000000","#ffffff","#ff2121","#ff93c4","#ff8135","#fff609","#249ca3","#78dc52","#003fad","#87f2ff","#8e2ec4","#a4839f","#5c406c","#e5cdc4","#91463d","#000000"];
+
+        // this get rewritten to blob URLs with SHAs while uploading to the cloud
+        // keep in sync with index.html
+        window.MonacoPaths = {
+            "vs/loader": "/microbit-static/vs/loader.js",
+            "vs/base/worker/workerMain": "/microbit-static/vs/base/worker/workerMain.js",
+            "vs/basic-languages/bat/bat": "/microbit-static/vs/basic-languages/bat/bat.js",
+            "vs/basic-languages/cpp/cpp": "/microbit-static/vs/basic-languages/cpp/cpp.js",
+            "vs/basic-languages/markdown/markdown": "/microbit-static/vs/basic-languages/markdown/markdown.js",
+            "vs/basic-languages/python/python": "/microbit-static/vs/basic-languages/python/python.js",
+            "vs/basic-languages/typescript/typescript": "/microbit-static/vs/basic-languages/typescript/typescript.js",
+            "vs/editor/editor.main.css": "/microbit-static/vs/editor/editor.main.css",
+            "vs/editor/editor.main": "/microbit-static/vs/editor/editor.main.js",
+            "vs/editor/editor.main.nls": "/microbit-static/vs/editor/editor.main.nls.js",
+            "vs/language/json/jsonMode": "/microbit-static/vs/language/json/jsonMode.js",
+            "vs/language/json/jsonWorker": "/microbit-static/vs/language/json/jsonWorker.js",
+            "vs/language/typescript/tsMode": "/microbit-static/vs/language/typescript/tsMode.js",
+            "vs/language/typescript/tsWorker": "/microbit-static/vs/language/typescript/tsWorker.js",
+            "lzma/lzma_worker-min.js": "/microbit-static/lzma/lzma_worker-min.js",
+            "smoothie/smoothie_compressed.js": "/microbit-static/smoothie/smoothie_compressed.js",
+            "pxtblockly.js": "/microbit-static/pxtblockly.js",
+            "blockly.css": "/microbit-static/blockly.css",
+            "rtlblockly.css": "/microbit-static/rtlblockly.css",
+            "gifjs/gif.js": "/microbit-static/gifjs/gif.js",
+            "qrcode/qrcode.min.js": "/microbit-static/qrcode/qrcode.min.js",
+            "zip.js/zip.min.js": "/microbit-static/zip.js/zip.min.js",
+            "pdf-lib/pdf-lib.min.js": "/microbit-static/pdf-lib/pdf-lib.min.js",
+            "music-editor/apple.png": "/microbit-static/music-editor/apple.png",
+            "music-editor/burger.png": "/microbit-static/music-editor/burger.png",
+            "music-editor/cake.png": "/microbit-static/music-editor/cake.png",
+            "music-editor/car.png": "/microbit-static/music-editor/car.png",
+            "music-editor/cat.png": "/microbit-static/music-editor/cat.png",
+            "music-editor/cherry.png": "/microbit-static/music-editor/cherry.png",
+            "music-editor/clam.png": "/microbit-static/music-editor/clam.png",
+            "music-editor/computer.png": "/microbit-static/music-editor/computer.png",
+            "music-editor/crab.png": "/microbit-static/music-editor/crab.png",
+            "music-editor/dog.png": "/microbit-static/music-editor/dog.png",
+            "music-editor/duck.png": "/microbit-static/music-editor/duck.png",
+            "music-editor/egg.png": "/microbit-static/music-editor/egg.png",
+            "music-editor/explosion.png": "/microbit-static/music-editor/explosion.png",
+            "music-editor/fish.png": "/microbit-static/music-editor/fish.png",
+            "music-editor/ice-cream.png": "/microbit-static/music-editor/ice-cream.png",
+            "music-editor/lemon.png": "/microbit-static/music-editor/lemon.png",
+            "music-editor/snake.png": "/microbit-static/music-editor/snake.png",
+            "music-editor/star.png": "/microbit-static/music-editor/star.png",
+            "music-editor/strawberry.png": "/microbit-static/music-editor/strawberry.png",
+            "music-editor/taco.png": "/microbit-static/music-editor/taco.png",
+            "music-editor/bass-clef.svg": "/microbit-static/music-editor/bass-clef.svg",
+            "music-editor/treble-clef.svg": "/microbit-static/music-editor/treble-clef.svg",
+        }
+    </script>
+    <script type="text/javascript" src="/microbit-static/pxtasseteditor.js"></script>
+    <div id="asset-editor-field-div">
+    </div>
+</body>
+
+</html>
